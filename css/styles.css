@@ -1,0 +1,256 @@
+/* Color palette 
+forest blue green #2F3E46
+dark blue green #354F52
+medium green #52796F
+Olive green #84A98C
+Pale olive #CAD2C5 #becdb5
+Ghost white #F8F8FF
+Green white #EAF4F4 #e8efe4
+*/
+
+/* CSS Grid 
+----------------------------------------------------*/
+.graphic-design {
+    display:grid;
+    grid-template-columns: .25fr .25fr .25fr;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-design {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+/*links
+----------------------------------------------------------*/
+a {
+    color:#354F52;
+}
+
+a:hover {
+    color: #84A98C;
+    text-decoration: underline;
+}
+
+footer a {
+    color:#84A98C;
+}
+
+footer a:hover {
+    color:#becdb5;
+    text-decoration: none;
+}
+
+
+/* Navigation 
+----------------------------------------*/  
+nav {
+    position: absolute;  
+    display:flex;
+    justify-content: center;
+    padding: 0; 
+    background-color: #e8efe4;     
+    top: 3em;           
+    left: 0;      
+    font-weight: bold;
+ }
+
+ nav ul {
+    list-style-type: none;      
+    max-height: 0em;    
+    overflow: hidden;    
+    transition: 0.3s; 
+ }
+
+ nav ul li a {
+    display: block;  
+    padding: .75em 1.75em;       
+    text-decoration: none;       
+ }
+
+ nav ul li a:hover {
+    color: #84A98C;       
+ }
+
+ .menu-wrap {               
+    height: 4em;            
+    background-color: #e8efe4;               
+    padding: 15px 15px;
+    position: relative;
+    left: 0;
+ }
+
+ .menu-icon {
+    font-size: 2em;          
+    color: #52796F;            
+ }
+
+ #checkbox {
+    display: none; 
+    position: relative;   
+    left: 0;     
+ }
+
+ #checkbox:checked ~ nav ul {
+    max-height: 11em;    
+ }
+
+ @media (min-width: 680px) {      
+    .menu-icon {
+      display: none;  
+    }
+ 
+    nav {
+      position: relative;
+      top: -.8em;      
+    }
+    nav ul {
+      max-height: 1em;      
+      padding: 15px 0;
+    }
+    nav ul li {
+      display: inline-block;   
+      padding-left: 1em;     
+    }
+ }
+ 
+
+/* Global styles 
+-----------------------------------------*/
+body {
+    background-color: #becdb5;
+    font-family: "quasimoda", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+h1, h2, h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    text-shadow: #354F52 1.5px 2.5px .75px;
+    line-height: 1.2;
+    text-align: center;
+    color:#52796F;
+}
+
+h2 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.6rem;
+}
+
+
+h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;  
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+@media screen and (max-width:875px) {
+    h1 {
+        font-size:3rem;
+    }
+    h2 {
+        font-size:2rem;
+    }
+}
+
+/* Portfolio */
+.portfolio-item img{
+    max-width: 600px;
+}
+
+.portfolio-item {
+    display:grid;
+    justify-content: center;
+}
+
+.portfolio-item.graphic-design-item {
+    display: grid;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    .graphic-design {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .web-design {
+        display:block;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .graphic-design {
+        display: block;
+        align-items: center;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #e8efe4;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo { 
+    max-width: 60px;
+}
+
+
+/* Bootstrap*/
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .bg-image-full {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
